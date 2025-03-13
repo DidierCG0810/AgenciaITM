@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "d92a6078-a4d7-4af2-8ece-c8b8d38e3688",
+		"name": "Parcial1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43062433"
+	},
+	"item": [
+		{
+			"name": "Vivienda",
+			"item": [
+				{
+					"name": "ConsultarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Vivienda}}/ConsultarTodos",
+							"host": [
+								"{{base_url_Vivienda}}"
+							],
+							"path": [
+								"ConsultarTodos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarxID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Vivienda}}/ConsultarxID?id_vivienda=1",
+							"host": [
+								"{{base_url_Vivienda}}"
+							],
+							"path": [
+								"ConsultarxID"
+							],
+							"query": [
+								{
+									"key": "id_vivienda",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id_vivienda\": 3,\r\n        \"id_tipo_vivienda\": 3,\r\n        \"id_agencia\": 1009,\r\n        \"num_cuartos\": 2,\r\n        \"num_banos\": 1,\r\n        \"tamano\": 60.8,\r\n        \"num_pisos\": 1,\r\n        \"accesorios\": \"Apartamento para pareja\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_Vivienda}}/Insertar",
+							"host": [
+								"{{base_url_Vivienda}}"
+							],
+							"path": [
+								"Insertar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id_vivienda\": 3,\r\n        \"id_tipo_vivienda\": 3,\r\n        \"id_agencia\": 1009,\r\n        \"num_cuartos\": 2,\r\n        \"num_banos\": 1,\r\n        \"tamano\": 60.8,\r\n        \"num_pisos\": 1,\r\n        \"accesorios\": \"Aparta Estudio\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_Vivienda}}/Actualizar",
+							"host": [
+								"{{base_url_Vivienda}}"
+							],
+							"path": [
+								"Actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarxID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Vivienda}}/Eliminar?id_vivienda=3",
+							"host": [
+								"{{base_url_Vivienda}}"
+							],
+							"path": [
+								"Eliminar"
+							],
+							"query": [
+								{
+									"key": "id_vivienda",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipo Vivienda",
+			"item": [
+				{
+					"name": "ConsultarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_TipoVivienda}}/ConsultarTodos",
+							"host": [
+								"{{base_url_TipoVivienda}}"
+							],
+							"path": [
+								"ConsultarTodos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarxID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_TipoVivienda}}/ConsultarxID?id_tipo_vivienda=1",
+							"host": [
+								"{{base_url_TipoVivienda}}"
+							],
+							"path": [
+								"ConsultarxID"
+							],
+							"query": [
+								{
+									"key": "id_tipo_vivienda",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id_tipo_vivienda\": 4,\r\n        \"descripción\": \"Apartamento\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_TipoVivienda}}/Insertar",
+							"host": [
+								"{{base_url_TipoVivienda}}"
+							],
+							"path": [
+								"Insertar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_tipo_vivienda\": 4,\r\n        \"descripción\": \"Aparta Estudio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_TipoVivienda}}/Actualizar",
+							"host": [
+								"{{base_url_TipoVivienda}}"
+							],
+							"path": [
+								"Actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarxID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_TipoVivienda}}/Eliminar?id_tipo_vivienda=5",
+							"host": [
+								"{{base_url_TipoVivienda}}"
+							],
+							"path": [
+								"Eliminar"
+							],
+							"query": [
+								{
+									"key": "id_tipo_vivienda",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "ConsultarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Cliente}}/ConsultarTodos",
+							"host": [
+								"{{base_url_Cliente}}"
+							],
+							"path": [
+								"ConsultarTodos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarxID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Cliente}}/ConsultarxID?id_cliente=55",
+							"host": [
+								"{{base_url_Cliente}}"
+							],
+							"path": [
+								"ConsultarxID"
+							],
+							"query": [
+								{
+									"key": "id_cliente",
+									"value": "55"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id_cliente\": 57,\r\n        \"nombre\": \"Didier\",\r\n        \"apellido\": \"Cano\",\r\n        \"telefono\": \"3002125267\",\r\n        \"correo\": \"dcano@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_Cliente}}/Insertar",
+							"host": [
+								"{{base_url_Cliente}}"
+							],
+							"path": [
+								"Insertar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"id_cliente\": 57,\r\n        \"nombre\": \"Didier\",\r\n        \"apellido\": \"Cano G\",\r\n        \"telefono\": \"3012125267\",\r\n        \"correo\": \"ddcano@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_Cliente}}/Actualizar",
+							"host": [
+								"{{base_url_Cliente}}"
+							],
+							"path": [
+								"Actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarxID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Cliente}}/Eliminar?id_cliente=57",
+							"host": [
+								"{{base_url_Cliente}}"
+							],
+							"path": [
+								"Eliminar"
+							],
+							"query": [
+								{
+									"key": "id_cliente",
+									"value": "57"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Venta",
+			"item": [
+				{
+					"name": "ConsultarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Venta}}/ConsultarTodos",
+							"host": [
+								"{{base_url_Venta}}"
+							],
+							"path": [
+								"ConsultarTodos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarxID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Venta}}/ConsultarxID?id_venta=2",
+							"host": [
+								"{{base_url_Venta}}"
+							],
+							"path": [
+								"ConsultarxID"
+							],
+							"query": [
+								{
+									"key": "id_venta",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id_venta\": 3,\r\n        \"id_cliente\": 57,\r\n        \"id_vivienda\": 3,\r\n        \"fecha_venta\": \"2022-02-28T00:00:00\",\r\n        \"precio_venta\": 77589765.99\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_Venta}}/Insertar",
+							"host": [
+								"{{base_url_Venta}}"
+							],
+							"path": [
+								"Insertar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id_venta\": 1,\r\n        \"id_cliente\": 55,\r\n        \"id_vivienda\": 1,\r\n        \"fecha_venta\": \"2021-08-13T00:00:00\",\r\n        \"precio_venta\": 70886765.99\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url_Venta}}/Actualizar",
+							"host": [
+								"{{base_url_Venta}}"
+							],
+							"path": [
+								"Actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarxID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_Venta}}/Eliminar?id_venta=3",
+							"host": [
+								"{{base_url_Venta}}"
+							],
+							"path": [
+								"Eliminar"
+							],
+							"query": [
+								{
+									"key": "id_venta",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "base_url_Vivienda",
+			"value": "http://localhost:62683/api/Vivienda",
+			"type": "string"
+		},
+		{
+			"key": "base_url_TipoVivienda",
+			"value": "http://localhost:62683/api/TipoVivienda",
+			"type": "string"
+		},
+		{
+			"key": "base_url_Cliente",
+			"value": "http://localhost:62683/api/Cliente",
+			"type": "string"
+		},
+		{
+			"key": "base_url_Venta",
+			"value": "http://localhost:62683/api/Venta",
+			"type": "string"
+		}
+	]
+}
